@@ -72,3 +72,4 @@ client.on('message_create', async message => {
 });
 
 client.initialize();
+
