@@ -2,12 +2,7 @@ require('dotenv').config();
 
 const { Client, LocalAuth } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
-const OpenAI = require('openai');  // Import the OpenAI SDK
 
-// Initialize the OpenAI client
-const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY  // Use your API key from the environment variables
-});
 
 // Create an instance of WhatsApp Web
 const client = new Client({
